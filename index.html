@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KEYSI KUNZ — Diseñadora de Moda · Modelo Elite · Keysi Models</title>
+<title data-i18n="pageTitle">KEYSI KUNZ — Diseñadora de Moda · Modelo Elite · Keysi Models</title>
 <meta name="description" content="Página profesional de Keysi Kunz: diseñadora de moda internacional, modelo Elite de pasarela, Founder & Director de Keysi Models, esgrimista profesional y pole dancer. Puebla, México — Paris Fashion Week.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/ojo-icono.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -20,34 +20,42 @@
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
   <nav class="nav-menu" id="navMenu" aria-label="Menú principal">
-    <a href="#pasarelas">Pasarelas</a>
+    <a href="#pasarelas" data-i18n="nav.runway">Pasarelas</a>
     <a href="#agencia">Keysi Models</a>
-    <a href="#marca">La Marca</a>
-    <a href="#esgrima">Esgrima</a>
+    <a href="#marca" data-i18n="nav.brand">La Marca</a>
+    <a href="#esgrima" data-i18n="nav.fencing">Esgrima</a>
     <a href="#pole-dance">Pole Dance</a>
-    <a href="#contacto" class="nav-cta">Contacto</a>
+    <a href="#contacto" class="nav-cta" data-i18n="nav.contact">Contacto</a>
+    <span class="lang-switch" role="group" aria-label="Language / Idioma">
+      <button type="button" data-lang="es" class="active">ES</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="de">DE</button>
+      <button type="button" data-lang="pt">PT</button>
+      <button type="button" data-lang="zh">中文</button>
+    </span>
   </nav>
 </header>
 
 <!-- ============ PORTADA / INVITACIÓN AL DESFILE ============ -->
 <section class="hero" id="inicio">
   <div class="hero-frame">
-    <p class="hero-kicker">Puebla · París · Latinoamérica</p>
-    <p class="hero-presenta">presenta</p>
+    <p class="hero-kicker" data-i18n="hero.kicker">Puebla · París · Latinoamérica</p>
+    <p class="hero-presenta" data-i18n="hero.presenta">presenta</p>
+    <p class="kpop-badge">✦ 케이시 쿤즈 ✦ KEYSI KUNZ ✦</p>
     <h1 class="hero-name">KEYSI<br>KUNZ</h1>
     <div class="hero-rule"><span></span>✦<span></span></div>
-    <p class="hero-roles">Diseñadora de Moda Internacional &nbsp;·&nbsp; Modelo Elite de Pasarela<br>
+    <p class="hero-roles" data-i18n-html="hero.roles">Diseñadora de Moda Internacional &nbsp;·&nbsp; Modelo Elite de Pasarela<br>
     Founder &amp; Director — <strong>Keysi Models</strong></p>
-    <p class="hero-season">COLECCIÓN PERMANENTE — Fashion, Esgrima &amp; Pole Dance</p>
+    <p class="hero-season" data-i18n="hero.season">COLECCIÓN PERMANENTE — Fashion, Esgrima &amp; Pole Dance</p>
     <div class="hero-ctas">
-      <a class="btn btn-solid" href="#programa">Ver el programa</a>
-      <a class="btn btn-ghost" href="#contacto">Bookings &amp; contacto</a>
+      <a class="btn btn-solid" href="#programa" data-i18n="hero.btnProgram">Ver el programa</a>
+      <a class="btn btn-ghost" href="#contacto" data-i18n="hero.btnBook">Bookings &amp; contacto</a>
     </div>
   </div>
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>DISEÑADORA ✦ MODELO ELITE ✦ KEYSI MODELS ✦ PARIS FASHION WEEK ✦ ESGRIMISTA ✦ POLE DANCER ✦ PUEBLA — MÉXICO ✦&nbsp;</span>
-      <span>DISEÑADORA ✦ MODELO ELITE ✦ KEYSI MODELS ✦ PARIS FASHION WEEK ✦ ESGRIMISTA ✦ POLE DANCER ✦ PUEBLA — MÉXICO ✦&nbsp;</span>
+      <span data-i18n="marquee">DISEÑADORA ✦ MODELO ELITE ✦ KEYSI MODELS ✦ PARIS FASHION WEEK ✦ ESGRIMISTA ✦ POLE DANCER ✦ 케이시 쿤즈 ✦ PUEBLA — MÉXICO ✦&nbsp;</span>
+      <span data-i18n="marquee">DISEÑADORA ✦ MODELO ELITE ✦ KEYSI MODELS ✦ PARIS FASHION WEEK ✦ ESGRIMISTA ✦ POLE DANCER ✦ 케이시 쿤즈 ✦ PUEBLA — MÉXICO ✦&nbsp;</span>
     </div>
   </div>
 </section>
@@ -55,48 +63,48 @@
 <!-- ============ PROGRAMA DEL DESFILE ============ -->
 <section class="programa" id="programa">
   <p class="sec-kicker">Running Order</p>
-  <h2 class="sec-title">Programa del desfile</h2>
-  <p class="sec-sub">Todo mi mundo, como en un gran evento de moda: cada sección es un look de la pasarela. Toca cualquier look para ir directo.</p>
+  <h2 class="sec-title" data-i18n="prog.title">Programa del desfile</h2>
+  <p class="sec-sub" data-i18n="prog.sub">Todo mi mundo, como en un gran evento de moda: cada sección es un look de la pasarela. Toca cualquier look para ir directo.</p>
   <ol class="programa-list">
-    <li><a href="#pasarelas"><span class="look">LOOK 01</span><span class="look-name">Pasarelas Internacionales</span><span class="look-note">París · México · Latinoamérica</span></a></li>
-    <li><a href="#agencia"><span class="look">LOOK 02</span><span class="look-name">Keysi Models — La Agencia</span><span class="look-note">Representación · Formación · Bookings</span></a></li>
-    <li><a href="#marca"><span class="look">LOOK 03</span><span class="look-name">Keysi Kunz — La Marca</span><span class="look-note">Ropa &amp; accesorios, desde 2022</span></a></li>
-    <li><a href="#esgrima"><span class="look">LOOK 04</span><span class="look-name">Esgrima</span><span class="look-note">Florete &amp; espada · Medallista nacional</span></a></li>
-    <li><a href="#pole-dance"><span class="look">LOOK 05</span><span class="look-name">Pole Dance</span><span class="look-note">Performer &amp; instructora</span></a></li>
-    <li><a href="#contacto"><span class="look">FINALE</span><span class="look-name">Contacto &amp; Bookings</span><span class="look-note">Salgamos a escena</span></a></li>
+    <li><a href="#pasarelas"><span class="look">LOOK 01</span><span class="look-name" data-i18n="prog.l1">Pasarelas Internacionales</span><span class="look-note" data-i18n="prog.n1">París · México · Latinoamérica</span></a></li>
+    <li><a href="#agencia"><span class="look">LOOK 02</span><span class="look-name" data-i18n="prog.l2">Keysi Models — La Agencia</span><span class="look-note" data-i18n="prog.n2">Representación · Formación · Bookings</span></a></li>
+    <li><a href="#marca"><span class="look">LOOK 03</span><span class="look-name" data-i18n="prog.l3">Keysi Kunz — La Marca</span><span class="look-note" data-i18n="prog.n3">Ropa &amp; accesorios, desde 2022</span></a></li>
+    <li><a href="#esgrima"><span class="look">LOOK 04</span><span class="look-name" data-i18n="nav.fencing">Esgrima</span><span class="look-note" data-i18n="prog.n4">Florete &amp; espada · Medallista nacional</span></a></li>
+    <li><a href="#pole-dance"><span class="look">LOOK 05</span><span class="look-name">Pole Dance</span><span class="look-note" data-i18n="prog.n5">Performer &amp; instructora</span></a></li>
+    <li><a href="#contacto"><span class="look">FINALE</span><span class="look-name" data-i18n="prog.l6">Contacto &amp; Bookings</span><span class="look-note" data-i18n="prog.n6">Salgamos a escena</span></a></li>
   </ol>
 </section>
 
 <!-- ============ LOOK 01 · PASARELAS ============ -->
 <section class="seccion" id="pasarelas">
   <p class="sec-kicker">Look 01</p>
-  <h2 class="sec-title">Pasarelas</h2>
-  <p class="sec-sub">Co-creadora y modelo en escenarios internacionales de moda.</p>
+  <h2 class="sec-title" data-i18n="nav.runway">Pasarelas</h2>
+  <p class="sec-sub" data-i18n="run.sub">Co-creadora y modelo en escenarios internacionales de moda.</p>
   <div class="cards">
     <article class="card reveal">
-      <p class="card-tag">París · 2024</p>
+      <p class="card-tag" data-i18n="run.c1tag">París · 2024</p>
       <h3>Paris Fashion Week — Florentina Leitner</h3>
-      <p>Co-creadora y modelo con la casa Florentina Leitner, presentada en el showroom SPHERE de la Fédération de la Haute Couture et de la Mode (FHCM) durante Paris Fashion Week.</p>
+      <p data-i18n="run.c1p">Co-creadora y modelo con la casa Florentina Leitner, presentada en el showroom SPHERE de la Fédération de la Haute Couture et de la Mode (FHCM) durante Paris Fashion Week.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">París · 2025</p>
+      <p class="card-tag" data-i18n="run.c2tag">París · 2025</p>
       <h3>Paris Fashion Week — Vautrait</h3>
-      <p>Co-creadora y modelo con Vautrait, casa incluida en el calendario oficial de Paris Fashion Week y semifinalista del LVMH Prize, reconocida por su sastrería y drapeado excepcionales.</p>
+      <p data-i18n="run.c2p">Co-creadora y modelo con Vautrait, casa incluida en el calendario oficial de Paris Fashion Week y semifinalista del LVMH Prize, reconocida por su sastrería y drapeado excepcionales.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">París</p>
+      <p class="card-tag" data-i18n="run.c3tag">París</p>
       <h3>About A Worker</h3>
-      <p>Co-autora y modelo en About A Worker, el proyecto colaborativo parisino de Kim Hou y Paul Boulenger que convierte a las manos que hacen la moda en diseñadoras.</p>
+      <p data-i18n="run.c3p">Co-autora y modelo en About A Worker, el proyecto colaborativo parisino de Kim Hou y Paul Boulenger que convierte a las manos que hacen la moda en diseñadoras.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">París · Mayo 2026</p>
+      <p class="card-tag" data-i18n="run.c4tag">París · Mayo 2026</p>
       <h3>Palais Galliera — La Nuit des Musées</h3>
-      <p>Aparición con un vestido rojo en el Palais Galliera, Museo de la Moda de la Ciudad de París, durante La Nuit des Musées, la gran noche de los museos de Europa.</p>
+      <p data-i18n="run.c4p">Aparición con un vestido rojo en el Palais Galliera, Museo de la Moda de la Ciudad de París, durante La Nuit des Musées, la gran noche de los museos de Europa.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">México · Latinoamérica</p>
-      <h3>Pasarelas &amp; presentaciones</h3>
-      <p>Presentaciones de mi marca y trabajo como modelo Elite en pasarelas de México y Latinoamérica, llevando el diseño poblano a escena.</p>
+      <p class="card-tag" data-i18n="run.c5tag">México · Latinoamérica</p>
+      <h3 data-i18n="run.c5h">Pasarelas &amp; presentaciones</h3>
+      <p data-i18n="run.c5p">Presentaciones de mi marca y trabajo como modelo Elite en pasarelas de México y Latinoamérica, llevando el diseño poblano a escena.</p>
     </article>
   </div>
 </section>
@@ -105,54 +113,54 @@
 <section class="seccion alt" id="agencia">
   <p class="sec-kicker">Look 02</p>
   <h2 class="sec-title">Keysi Models</h2>
-  <p class="sec-sub">Mi agencia de modelos en Puebla, fundada en 2023. Soy su Founder &amp; Director.</p>
+  <p class="sec-sub" data-i18n="ag.sub">Mi agencia de modelos en Puebla, fundada en 2023. Soy su Founder &amp; Director.</p>
   <img class="agency-logo reveal" src="assets/logo-horizontal.png" alt="Logo de Keysi Models — ojo pintado en rosa pastel, azul cielo y lila">
   <div class="cards">
     <article class="card reveal">
-      <p class="card-tag">Servicio</p>
-      <h3>Representación</h3>
-      <p>Representación de modelos para marcas, diseñadores y producciones que buscan talento profesional.</p>
+      <p class="card-tag" data-i18n="ag.tag">Servicio</p>
+      <h3 data-i18n="ag.c1h">Representación</h3>
+      <p data-i18n="ag.c1p">Representación de modelos para marcas, diseñadores y producciones que buscan talento profesional.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">Servicio</p>
-      <h3>Formación</h3>
-      <p>Formación integral de modelos: pasarela, proyección, postura y presencia escénica.</p>
+      <p class="card-tag" data-i18n="ag.tag">Servicio</p>
+      <h3 data-i18n="ag.c2h">Formación</h3>
+      <p data-i18n="ag.c2p">Formación integral de modelos: pasarela, proyección, postura y presencia escénica.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">Servicio</p>
-      <h3>Pasarelas</h3>
-      <p>Producción y participación en pasarelas y eventos de moda con sello profesional.</p>
+      <p class="card-tag" data-i18n="ag.tag">Servicio</p>
+      <h3 data-i18n="nav.runway">Pasarelas</h3>
+      <p data-i18n="ag.c3p">Producción y participación en pasarelas y eventos de moda con sello profesional.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">Servicio</p>
+      <p class="card-tag" data-i18n="ag.tag">Servicio</p>
       <h3>Bookings</h3>
-      <p>Bookings para campañas, editoriales, eventos y marcas en México y el extranjero.</p>
+      <p data-i18n="ag.c4p">Bookings para campañas, editoriales, eventos y marcas en México y el extranjero.</p>
     </article>
   </div>
-  <p class="center"><a class="btn btn-solid" href="#contacto">Contratar a la agencia</a></p>
+  <p class="center"><a class="btn btn-solid" href="#contacto" data-i18n="ag.cta">Contratar a la agencia</a></p>
 </section>
 
 <!-- ============ LOOK 03 · LA MARCA ============ -->
 <section class="seccion" id="marca">
   <p class="sec-kicker">Look 03</p>
-  <h2 class="sec-title">Keysi Kunz — La Marca</h2>
-  <p class="sec-sub">Mi marca de ropa y accesorios, fundada en 2022.</p>
+  <h2 class="sec-title" data-i18n="prog.l3">Keysi Kunz — La Marca</h2>
+  <p class="sec-sub" data-i18n="marca.sub">Mi marca de ropa y accesorios, fundada en 2022.</p>
   <figure class="brand-banner reveal">
     <img src="assets/banner-hispano-haute.png" alt="Kaysi Kunz — Hispano Haute &amp; Jewelry · Moda, joyería y accesorios">
   </figure>
   <div class="split">
     <div class="reveal">
-      <h3 class="split-h">Diseño con manos propias</h3>
-      <p>Diseño y creo ropa y accesorios con identidad propia. Mi firma en accesorios: <strong>aretes y piezas con bordado hecho a mano</strong>, detalle artesanal mexicano llevado a la pasarela.</p>
-      <p>Formación: Licenciatura en Diseño y Dirección de Moda — <strong>TROZMER Centro Universitario, Puebla (2025)</strong>.</p>
+      <h3 class="split-h" data-i18n="marca.h">Diseño con manos propias</h3>
+      <p data-i18n-html="marca.p1">Diseño y creo ropa y accesorios con identidad propia. Mi firma en accesorios: <strong>aretes y piezas con bordado hecho a mano</strong>, detalle artesanal mexicano llevado a la pasarela.</p>
+      <p data-i18n-html="marca.p2">Formación: Licenciatura en Diseño y Dirección de Moda — <strong>TROZMER Centro Universitario, Puebla (2025)</strong>.</p>
     </div>
     <div class="menu-box reveal">
-      <h4>Menú de la marca</h4>
+      <h4 data-i18n="marca.menuH">Menú de la marca</h4>
       <ul>
-        <li><a href="https://www.instagram.com/keyss.accesorios/" target="_blank" rel="noopener">Accesorios — @keyss.accesorios <span>Instagram ↗</span></a></li>
-        <li><a href="https://www.instagram.com/key_si_kunz/" target="_blank" rel="noopener">Ropa &amp; pasarelas — @key_si_kunz <span>Instagram ↗</span></a></li>
-        <li><a href="#pasarelas">Presentaciones en París <span>Look 01 ↗</span></a></li>
-        <li><a href="#contacto">Ventas &amp; colaboraciones <span>Contacto ↗</span></a></li>
+        <li><a href="https://www.instagram.com/keyss.accesorios/" target="_blank" rel="noopener" data-i18n-html="marca.m1">Accesorios — @keyss.accesorios <span>Instagram ↗</span></a></li>
+        <li><a href="https://www.instagram.com/key_si_kunz/" target="_blank" rel="noopener" data-i18n-html="marca.m2">Ropa &amp; pasarelas — @key_si_kunz <span>Instagram ↗</span></a></li>
+        <li><a href="#pasarelas" data-i18n-html="marca.m3">Presentaciones en París <span>Look 01 ↗</span></a></li>
+        <li><a href="#contacto" data-i18n-html="marca.m4">Ventas &amp; colaboraciones <span>Contacto ↗</span></a></li>
       </ul>
     </div>
   </div>
@@ -161,29 +169,29 @@
 <!-- ============ LOOK 04 · ESGRIMA ============ -->
 <section class="seccion alt" id="esgrima">
   <p class="sec-kicker">Look 04</p>
-  <h2 class="sec-title">Esgrima</h2>
-  <p class="sec-sub">Esgrimista profesional en florete y espada. Practico desde los 6 años y gano medallas desde los 12, con el Club Alpha (Titanes) de Puebla.</p>
+  <h2 class="sec-title" data-i18n="nav.fencing">Esgrima</h2>
+  <p class="sec-sub" data-i18n="esg.sub">Esgrimista profesional en florete y espada. Practico desde los 6 años y gano medallas desde los 12, con el Club Alpha (Titanes) de Puebla.</p>
   <div class="timeline">
     <article class="tl reveal">
       <p class="tl-year">2015</p>
       <div>
-        <h3>Medallista — Olimpiada Nacional 2015</h3>
-        <p>Medallista de esgrima representando a Puebla en la Olimpiada Nacional 2015, entrevistada por el CEID Puebla.</p>
-        <p><a class="inline-link" href="https://www.youtube.com/watch?v=HpL2aJSpUwo" target="_blank" rel="noopener">▶ Ver la entrevista en YouTube</a></p>
+        <h3 data-i18n="esg.y15h">Medallista — Olimpiada Nacional 2015</h3>
+        <p data-i18n="esg.y15p">Medallista de esgrima representando a Puebla en la Olimpiada Nacional 2015, entrevistada por el CEID Puebla.</p>
+        <p><a class="inline-link" href="https://www.youtube.com/watch?v=HpL2aJSpUwo" target="_blank" rel="noopener" data-i18n="esg.yt">▶ Ver la entrevista en YouTube</a></p>
       </div>
     </article>
     <article class="tl reveal">
       <p class="tl-year">2016</p>
       <div>
-        <h3>Bronce — Olimpiada Nacional 2016</h3>
-        <p>Medalla de bronce en florete individual, categoría 14-15 años, en la Olimpiada Nacional 2016 — registrado por Poblanerías. Ese mismo año, plata en categoría C en la Copa Jenkins del Club Alpha.</p>
+        <h3 data-i18n="esg.y16h">Bronce — Olimpiada Nacional 2016</h3>
+        <p data-i18n="esg.y16p">Medalla de bronce en florete individual, categoría 14-15 años, en la Olimpiada Nacional 2016 — registrado por Poblanerías. Ese mismo año, plata en categoría C en la Copa Jenkins del Club Alpha.</p>
       </div>
     </article>
     <article class="tl reveal">
       <p class="tl-year">2019</p>
       <div>
-        <h3>Bronce — Olimpiada Nacional 2019</h3>
-        <p>Medalla de bronce en florete por equipos en la Olimpiada Nacional 2019, con el Club Alpha (Titanes). Entrenador: Miguel León.</p>
+        <h3 data-i18n="esg.y19h">Bronce — Olimpiada Nacional 2019</h3>
+        <p data-i18n="esg.y19p">Medalla de bronce en florete por equipos en la Olimpiada Nacional 2019, con el Club Alpha (Titanes). Entrenador: Miguel León.</p>
       </div>
     </article>
   </div>
@@ -193,47 +201,47 @@
 <section class="seccion" id="pole-dance">
   <p class="sec-kicker">Look 05</p>
   <h2 class="sec-title">Pole Dance</h2>
-  <p class="sec-sub">Professional Pole Dance Performer &amp; Instructor — en escena y en clase desde los 18 años.</p>
+  <p class="sec-sub" data-i18n="pole.sub">Professional Pole Dance Performer &amp; Instructor — en escena y en clase desde los 18 años.</p>
   <div class="cards">
     <article class="card reveal">
-      <p class="card-tag">Clases</p>
-      <h3>Presenciales</h3>
-      <p>Clases presenciales de pole dance en Puebla, para todos los niveles.</p>
+      <p class="card-tag" data-i18n="pole.tag">Clases</p>
+      <h3 data-i18n="pole.c1h">Presenciales</h3>
+      <p data-i18n="pole.c1p">Clases presenciales de pole dance en Puebla, para todos los niveles.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">Clases</p>
-      <h3>En línea</h3>
-      <p>Clases en línea desde donde estés, con seguimiento personalizado.</p>
+      <p class="card-tag" data-i18n="pole.tag">Clases</p>
+      <h3 data-i18n="pole.c2h">En línea</h3>
+      <p data-i18n="pole.c2p">Clases en línea desde donde estés, con seguimiento personalizado.</p>
     </article>
     <article class="card reveal">
-      <p class="card-tag">Escena</p>
+      <p class="card-tag" data-i18n="pole.tag2">Escena</p>
       <h3>Performances</h3>
-      <p>Presentaciones y performances profesionales para eventos y producciones.</p>
+      <p data-i18n="pole.c3p">Presentaciones y performances profesionales para eventos y producciones.</p>
     </article>
       </div>
-  <p class="center">Reserva tu clase o una presentación por <a class="inline-link" href="https://www.linkedin.com/in/keysi-kunz" target="_blank" rel="noopener">LinkedIn</a> o por <a class="inline-link" href="https://t.me/Dalila_kunz" target="_blank" rel="noopener">Telegram (@Dalila_kunz)</a>.</p>
+  <p class="center" data-i18n-html="pole.book">Reserva tu clase o una presentación por <a class="inline-link" href="https://www.linkedin.com/in/keysi-kunz" target="_blank" rel="noopener">LinkedIn</a> o por <a class="inline-link" href="https://t.me/Dalila_kunz" target="_blank" rel="noopener">Telegram (@Dalila_kunz)</a>.</p>
 </section>
 
 <!-- ============ FINALE · CONTACTO ============ -->
 <section class="seccion contacto" id="contacto">
   <p class="sec-kicker">Finale</p>
-  <h2 class="sec-title">Contacto &amp; Bookings</h2>
-  <p class="sec-sub">Pasarelas, colaboraciones, bookings de modelos, ventas de la marca y clases de pole dance.</p>
+  <h2 class="sec-title" data-i18n="prog.l6">Contacto &amp; Bookings</h2>
+  <p class="sec-sub" data-i18n="cont.sub">Pasarelas, colaboraciones, bookings de modelos, ventas de la marca y clases de pole dance.</p>
   <div class="contact-btns">
     <a class="btn btn-solid" href="https://www.linkedin.com/in/keysi-kunz" target="_blank" rel="noopener">LinkedIn — Keysi Kunz</a>
-    <a class="btn btn-ghost light" href="https://www.instagram.com/keyss.accesorios/" target="_blank" rel="noopener">Accesorios — @keyss.accesorios</a>
-    <a class="btn btn-ghost light" href="https://www.instagram.com/key_si_kunz/" target="_blank" rel="noopener">Ropa — @key_si_kunz</a>
+    <a class="btn btn-ghost light" href="https://www.instagram.com/keyss.accesorios/" target="_blank" rel="noopener" data-i18n="cont.b2">Accesorios — @keyss.accesorios</a>
+    <a class="btn btn-ghost light" href="https://www.instagram.com/key_si_kunz/" target="_blank" rel="noopener" data-i18n="cont.b3">Ropa — @key_si_kunz</a>
     <a class="btn btn-ghost light" href="https://t.me/Dalila_kunz" target="_blank" rel="noopener">Telegram — @Dalila_kunz</a>
-    <a class="btn btn-ghost light" href="https://t.me/wesichika69" target="_blank" rel="noopener">Canal de Telegram</a>
+    <a class="btn btn-ghost light" href="https://t.me/wesichika69" target="_blank" rel="noopener" data-i18n="cont.b5">Canal de Telegram</a>
   </div>
-  <p class="contact-note">Español nativo · English (B2) &nbsp;|&nbsp; Puebla, México 🇲🇽</p>
+  <p class="contact-note" data-i18n="cont.note">Español nativo · English (B2) &nbsp;|&nbsp; Puebla, México 🇲🇽</p>
 </section>
 
 <footer class="footer">
   <img class="footer-eye" src="assets/ojo-icono.png" alt="Ojo — símbolo de Keysi Models">
   <p class="footer-brand">KEYSI KUNZ</p>
-  <p>Keysi Models · Keysi Kunz — La Marca · Puebla, México</p>
-  <p class="footer-small">© 2026 Keysi Kunz. Todos los derechos reservados.</p>
+  <p data-i18n="foot.line">Keysi Models · Keysi Kunz — La Marca · Puebla, México</p>
+  <p class="footer-small" data-i18n="foot.rights">© 2026 Keysi Kunz. Todos los derechos reservados.</p>
 </footer>
 
 <script src="script.js"></script>
