@@ -486,6 +486,18 @@
     var enc = encodeURIComponent(feed);
     var attempts = [
       function () {
+        return fetch('assets/noticias.json', { cache: 'no-store' })
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            var key = id === 'news-moda' ? 'moda' : 'esgrima';
+            var items = ((d && d[key]) || []).map(function (it) {
+              return { title: it.title || '', link: it.link || '', pubDate: it.pubDate || '', author: it.source || '' };
+            });
+            if (items.length) return items;
+            throw new Error('local');
+          });
+      },
+      function () {
         return fetch('https://feed2json.org/convert?url=' + enc)
           .then(function (r) { return r.json(); })
           .then(function (d) {
