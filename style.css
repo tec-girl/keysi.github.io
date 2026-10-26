@@ -183,3 +183,6 @@ h2,h3{font-family:var(--serif);font-weight:600}
 /* Banner de la marca (Hispano Haute & Jewelry) */
 .brand-banner{margin:0 auto 2.2rem;max-width:980px}
 .brand-banner img{width:100%;height:auto;display:block;border-radius:18px;box-shadow:0 18px 44px rgba(37,19,56,.22)}
+
+/* Esgrima: imagen a 1/6 de su tamaño (pedido 2026-10-26; antes max 520px) */
+.esg-photo{max-width:87px}
