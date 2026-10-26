@@ -486,6 +486,26 @@
     var enc = encodeURIComponent(feed);
     var attempts = [
       function () {
+        return fetch('https://feed2json.org/convert?url=' + enc)
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            var items = ((d && d.items) || []).map(function (it) {
+              return { title: it.title || '', link: it.url || '', pubDate: it.date_published || '', author: '' };
+            });
+            if (items.length) return items;
+            throw new Error('feed2json');
+          });
+      },
+      function () {
+        return fetch('https://cors.eu.org/' + feed)
+          .then(function (r) { return r.text(); })
+          .then(function (t) {
+            var items = fromXML(t);
+            if (items.length) return items;
+            throw new Error('cors-eu');
+          });
+      },
+      function () {
         return fetch('https://api.rss2json.com/v1/api.json?rss_url=' + enc)
           .then(function (r) { return r.json(); })
           .then(function (d) {
