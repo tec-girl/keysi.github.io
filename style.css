@@ -46,13 +46,14 @@ h2,h3{font-family:var(--serif);font-weight:600}
 /* ===== HERO ===== */
 .hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
   background:
-    radial-gradient(55% 45% at 12% 0%,rgba(23,195,220,.30) 0%,transparent 60%),
-    radial-gradient(55% 45% at 88% 12%,rgba(255,93,162,.28) 0%,transparent 60%),
-    radial-gradient(70% 55% at 50% 108%,rgba(139,92,246,.38) 0%,transparent 62%),
+    radial-gradient(60% 50% at 10% 0%,rgba(56,189,248,.52) 0%,transparent 62%),
+    radial-gradient(60% 50% at 90% 10%,rgba(255,93,162,.46) 0%,transparent 62%),
+    radial-gradient(45% 38% at 50% 0%,rgba(139,92,246,.42) 0%,transparent 65%),
+    radial-gradient(70% 55% at 50% 108%,rgba(139,92,246,.50) 0%,transparent 62%),
     var(--black);
   color:var(--ivory);padding:7.5rem 1.2rem 0;position:relative;overflow:hidden}
 .hero-frame{border:1px solid var(--line);padding:3.2rem 2.2rem 2.6rem;max-width:56rem;width:100%;position:relative;
-  box-shadow:0 0 44px rgba(139,92,246,.22),0 0 90px rgba(23,195,220,.10)}
+  box-shadow:0 0 44px rgba(139,92,246,.34),0 0 90px rgba(56,189,248,.22),0 0 120px rgba(255,93,162,.18)}
 .hero-frame::after{content:"";position:absolute;inset:.55rem;border:1px solid rgba(139,92,246,.22);pointer-events:none}
 .hero-kicker{letter-spacing:.45em;text-transform:uppercase;font-size:.78rem;color:var(--turq);font-weight:600}
 .hero-presenta{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:#e6d9f7;margin-top:.6rem}
@@ -60,7 +61,7 @@ h2,h3{font-family:var(--serif);font-weight:600}
   background:linear-gradient(var(--black),var(--black)) padding-box,var(--grad) border-box;
   font-size:.72rem;font-weight:700;letter-spacing:.28em;color:#fff}
 .hero-name{font-family:var(--serif);font-weight:600;font-size:clamp(4rem,14vw,9.5rem);line-height:.95;letter-spacing:.06em;margin:.8rem 0 .4rem;
-  background:linear-gradient(92deg,#7deef7 0%,var(--turq) 22%,#fff 50%,var(--pink) 78%,var(--purple) 100%);
+  background:linear-gradient(92deg,#a5f3fc 0%,#38bdf8 24%,#fff 48%,var(--pink) 74%,var(--purple) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
   filter:drop-shadow(0 0 22px rgba(255,93,162,.25))}
 .hero-rule{display:flex;align-items:center;gap:1rem;justify-content:center;color:var(--pink);margin:1rem auto 1.2rem;max-width:26rem}
@@ -75,6 +76,24 @@ h2,h3{font-family:var(--serif);font-weight:600}
 .btn-solid:hover{filter:brightness(1.12)}
 .btn-ghost{color:var(--lilac);background:transparent}
 .btn-ghost:hover{background:rgba(139,92,246,.16)}
+/* ===== ESGRIMA FOTO + NOTICIAS ===== */
+.esg-photo{max-width:520px;margin:0 auto 2.4rem;border:1px solid var(--line);box-shadow:0 0 34px rgba(56,189,248,.18),0 0 60px rgba(255,93,162,.12)}
+.esg-photo img{display:block;width:100%;height:auto}
+.news-banner{max-width:880px;margin:0 auto 2rem;border:1px solid var(--line);box-shadow:0 0 34px rgba(139,92,246,.25)}
+.news-banner img{display:block;width:100%;height:auto}
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:1020px;margin:0 auto;text-align:left}
+.news-panel{border:1px solid var(--line);background:rgba(139,92,246,.06);padding:1.4rem 1.5rem}
+.news-h{font-family:var(--serif);font-size:1.35rem;margin-bottom:.9rem;color:#fff}
+.news-list{list-style:none}
+.news-list li{padding:.62rem 0;border-bottom:1px solid rgba(196,176,245,.16)}
+.news-list li:last-child{border-bottom:none}
+.news-list a{color:#f3eafd;text-decoration:none;font-weight:600;line-height:1.35;display:block}
+.news-list a:hover{color:var(--turq)}
+.news-meta{display:block;font-size:.74rem;letter-spacing:.06em;color:#b9a8dd;margin-top:.22rem;text-transform:uppercase}
+.news-msg{color:#cbb8e8;font-style:italic}
+.news-more{margin-top:.9rem}
+@media(max-width:760px){.news-grid{grid-template-columns:1fr}}
+
 .btn-ghost.light{color:var(--ink);border-color:var(--pink-d)}
 .btn-ghost.light:hover{background:rgba(255,93,162,.08)}
 .marquee{margin-top:3.4rem;width:100vw;border-top:1px solid var(--line);border-bottom:1px solid var(--line);

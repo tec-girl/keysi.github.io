@@ -46,7 +46,13 @@
       "prog.l2": "Keysi Models — The Agency", "prog.n2": "Representation · Training · Bookings",
       "prog.l3": "Keysi Kunz — The Brand", "prog.n3": "Clothing &amp; accessories, since 2022",
       "prog.n4": "Foil &amp; épée · National medalist", "prog.n5": "Performer &amp; instructor",
-      "prog.l6": "Contact &amp; Bookings", "prog.n6": "Let's take the stage",
+      "prog.l6": "Contact &amp; Bookings",
+      "nav.news": "News",
+      "news.title": "News: Fashion & Fencing",
+      "news.sub": "Recent headlines from fashion and fencing channels, refreshed when the page loads.",
+      "news.fashion": "Fashion",
+      "news.fencing": "Fencing",
+      "news.more": "More news ↗", "prog.n6": "Let's take the stage",
       "run.sub": "Co-creator and model on international fashion stages.",
       "run.c1tag": "Paris · 2024",
       "run.c1p": "Co-creator and model with the house of Florentina Leitner, presented at the SPHERE showroom of the Fédération de la Haute Couture et de la Mode (FHCM) during Paris Fashion Week.",
@@ -108,7 +114,13 @@
       "prog.l2": "Keysi Models — L'Agence", "prog.n2": "Représentation · Formation · Bookings",
       "prog.l3": "Keysi Kunz — La Marque", "prog.n3": "Vêtements &amp; accessoires, depuis 2022",
       "prog.n4": "Fleuret &amp; épée · Médaillée nationale", "prog.n5": "Performeuse &amp; instructrice",
-      "prog.l6": "Contact &amp; Bookings", "prog.n6": "Entrons en scène",
+      "prog.l6": "Contact &amp; Bookings",
+      "nav.news": "Actus",
+      "news.title": "Actus : Mode & Escrime",
+      "news.sub": "Titres récents des chaînes de mode et d'escrime, actualisés à l'ouverture de la page.",
+      "news.fashion": "Mode",
+      "news.fencing": "Escrime",
+      "news.more": "Plus d'actus ↗", "prog.n6": "Entrons en scène",
       "run.sub": "Co-créatrice et mannequin sur les scènes de mode internationales.",
       "run.c1tag": "Paris · 2024",
       "run.c1p": "Co-créatrice et mannequin avec la maison Florentina Leitner, présentée au showroom SPHERE de la Fédération de la Haute Couture et de la Mode (FHCM) pendant la Paris Fashion Week.",
@@ -170,7 +182,13 @@
       "prog.l2": "Keysi Models — Die Agentur", "prog.n2": "Vertretung · Ausbildung · Bookings",
       "prog.l3": "Keysi Kunz — Die Marke", "prog.n3": "Kleidung &amp; Accessoires, seit 2022",
       "prog.n4": "Florett &amp; Degen · Nationale Medaillengewinnerin", "prog.n5": "Performerin &amp; Trainerin",
-      "prog.l6": "Kontakt &amp; Bookings", "prog.n6": "Ab auf die Bühne",
+      "prog.l6": "Kontakt &amp; Bookings",
+      "nav.news": "News",
+      "news.title": "News: Mode & Fechten",
+      "news.sub": "Aktuelle Schlagzeilen von Mode- und Fechtkanälen, beim Öffnen der Seite aktualisiert.",
+      "news.fashion": "Mode",
+      "news.fencing": "Fechten",
+      "news.more": "Mehr News ↗", "prog.n6": "Ab auf die Bühne",
       "run.sub": "Co-Creatorin und Model auf internationalen Modebühnen.",
       "run.c1tag": "Paris · 2024",
       "run.c1p": "Co-Creatorin und Model für das Haus Florentina Leitner, präsentiert im SPHERE-Showroom der Fédération de la Haute Couture et de la Mode (FHCM) während der Paris Fashion Week.",
@@ -232,7 +250,13 @@
       "prog.l2": "Keysi Models — A Agência", "prog.n2": "Representação · Formação · Bookings",
       "prog.l3": "Keysi Kunz — A Marca", "prog.n3": "Roupas &amp; acessórios, desde 2022",
       "prog.n4": "Florete &amp; espada · Medalhista nacional", "prog.n5": "Performer &amp; instrutora",
-      "prog.l6": "Contato &amp; Bookings", "prog.n6": "Vamos ao palco",
+      "prog.l6": "Contato &amp; Bookings",
+      "nav.news": "Notícias",
+      "news.title": "Notícias: Moda & Esgrima",
+      "news.sub": "Manchetes recentes de canais de moda e esgrima, atualizadas ao abrir a página.",
+      "news.fashion": "Moda",
+      "news.fencing": "Esgrima",
+      "news.more": "Mais notícias ↗", "prog.n6": "Vamos ao palco",
       "run.sub": "Co-criadora e modelo em palcos internacionais de moda.",
       "run.c1tag": "Paris · 2024",
       "run.c1p": "Co-criadora e modelo com a casa Florentina Leitner, apresentada no showroom SPHERE da Fédération de la Haute Couture et de la Mode (FHCM) durante a Paris Fashion Week.",
@@ -294,7 +318,13 @@
       "prog.l2": "Keysi Models — 经纪公司", "prog.n2": "经纪 · 培训 · 预约",
       "prog.l3": "Keysi Kunz — 品牌", "prog.n3": "服装与配饰，始于2022年",
       "prog.n4": "花剑与重剑 · 全国奖牌得主", "prog.n5": "表演者与教练",
-      "prog.l6": "联系与预约", "prog.n6": "让我们登台",
+      "prog.l6": "联系与预约",
+      "nav.news": "新闻",
+      "news.title": "新闻：时尚与击剑",
+      "news.sub": "时尚与击剑频道的最新头条，打开页面时更新。",
+      "news.fashion": "时尚",
+      "news.fencing": "击剑",
+      "news.more": "更多新闻 ↗", "prog.n6": "让我们登台",
       "run.sub": "国际时尚舞台上的共创者与模特。",
       "run.c1tag": "巴黎 · 2024",
       "run.c1p": "与 Florentina Leitner 品牌合作担任共创者与模特，在巴黎时装周期间于法国高级定制与时尚联合会（FHCM）的 SPHERE 展厅呈现。",
@@ -380,4 +410,113 @@
   var saved = null;
   try { saved = localStorage.getItem('keysi-lang'); } catch (e) {}
   if (saved && saved !== 'es') applyLang(saved);
+})();
+
+/* ===== NOTICIAS EN VIVO (Google News vía rss2json) ===== */
+(function () {
+  var lang = 'es';
+  try { lang = localStorage.getItem('keysi-lang') || 'es'; } catch (e) {}
+  var LOCALES = { es: 'es-MX', en: 'en-US', fr: 'fr-FR', de: 'de-DE', pt: 'pt-BR', zh: 'zh-CN' };
+  var STR = {
+    es: { loading: 'Cargando noticias…', error: 'No se pudieron cargar las noticias en este momento.' },
+    en: { loading: 'Loading news…', error: 'News could not be loaded right now.' },
+    fr: { loading: 'Chargement des actus…', error: "Impossible de charger les actus pour le moment." },
+    de: { loading: 'News werden geladen…', error: 'Die News konnten gerade nicht geladen werden.' },
+    pt: { loading: 'Carregando notícias…', error: 'Não foi possível carregar as notícias agora.' },
+    zh: { loading: '正在加载新闻…', error: '目前无法加载新闻。' }
+  };
+  var S = STR[lang] || STR.es;
+  document.querySelectorAll('[data-news-loading]').forEach(function (el) { el.textContent = S.loading; });
+
+  var FEEDS = {
+    'news-moda': 'https://news.google.com/rss/search?q=fashion+week+OR+pasarela+OR+moda&hl=es-419&gl=MX&ceid=MX:es-419',
+    'news-esgrima': 'https://news.google.com/rss/search?q=esgrima+OR+fencing&hl=es-419&gl=MX&ceid=MX:es-419'
+  };
+
+  function render(id, items) {
+    var ul = document.getElementById(id);
+    if (!ul) return;
+    ul.innerHTML = '';
+    (items || []).slice(0, 5).forEach(function (it) {
+      var title = it.title || '';
+      var source = it.author || '';
+      var m = title.match(/^(.*) - ([^-]+)$/);
+      if (m) { title = m[1]; if (!source) source = m[2].trim(); }
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = it.link;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = title;
+      li.appendChild(a);
+      var meta = document.createElement('span');
+      meta.className = 'news-meta';
+      var date = '';
+      try { date = new Date(it.pubDate).toLocaleDateString(LOCALES[lang] || 'es-MX', { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) {}
+      meta.textContent = (source ? source + ' · ' : '') + date;
+      li.appendChild(meta);
+      ul.appendChild(li);
+    });
+    if (!ul.children.length) throw new Error('empty');
+  }
+
+  function fail(id) {
+    var ul = document.getElementById(id);
+    if (ul) ul.innerHTML = '<li class="news-msg">' + S.error + '</li>';
+  }
+
+  function fromXML(text) {
+    var doc = new DOMParser().parseFromString(text, 'text/xml');
+    var nodes = doc.querySelectorAll('item');
+    var out = [];
+    nodes.forEach(function (n) {
+      var src = n.querySelector('source');
+      out.push({
+        title: (n.querySelector('title') || {}).textContent || '',
+        link: (n.querySelector('link') || {}).textContent || '',
+        pubDate: (n.querySelector('pubDate') || {}).textContent || '',
+        author: src ? src.textContent : ''
+      });
+    });
+    return out;
+  }
+
+  function loadFeed(id) {
+    var feed = FEEDS[id];
+    var enc = encodeURIComponent(feed);
+    var attempts = [
+      function () {
+        return fetch('https://api.rss2json.com/v1/api.json?rss_url=' + enc)
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            if (d && d.status === 'ok' && d.items && d.items.length) return d.items;
+            throw new Error('rss2json');
+          });
+      },
+      function () {
+        return fetch('https://api.allorigins.win/get?url=' + enc)
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            var items = d && d.contents ? fromXML(d.contents) : [];
+            if (items.length) return items;
+            throw new Error('allorigins');
+          });
+      },
+      function () {
+        return fetch('https://api.codetabs.com/v1/proxy?quest=' + enc)
+          .then(function (r) { return r.text(); })
+          .then(function (t) {
+            var items = fromXML(t);
+            if (items.length) return items;
+            throw new Error('codetabs');
+          });
+      }
+    ];
+    (function next(i) {
+      if (i >= attempts.length) { fail(id); return; }
+      attempts[i]().then(function (items) { render(id, items); }).catch(function () { next(i + 1); });
+    })(0);
+  }
+
+  Object.keys(FEEDS).forEach(loadFeed);
 })();
