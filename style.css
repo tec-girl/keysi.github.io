@@ -52,6 +52,9 @@ h2,h3{font-family:var(--serif);font-weight:600}
     radial-gradient(70% 55% at 50% 108%,rgba(139,92,246,.50) 0%,transparent 62%),
     var(--black);
   color:var(--ivory);padding:7.5rem 1.2rem 0;position:relative;overflow:hidden}
+.hero-banner{max-width:56rem;width:100%;margin:0 auto 1.6rem;border:1px solid var(--line);
+  box-shadow:0 0 34px rgba(56,189,248,.20),0 0 60px rgba(255,93,162,.14)}
+.hero-banner img{display:block;width:100%;height:auto}
 .hero-frame{border:1px solid var(--line);padding:3.2rem 2.2rem 2.6rem;max-width:56rem;width:100%;position:relative;
   box-shadow:0 0 44px rgba(139,92,246,.34),0 0 90px rgba(56,189,248,.22),0 0 120px rgba(255,93,162,.18)}
 .hero-frame::after{content:"";position:absolute;inset:.55rem;border:1px solid rgba(139,92,246,.22);pointer-events:none}
