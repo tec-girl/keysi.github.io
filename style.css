@@ -187,3 +187,7 @@ h2,h3{font-family:var(--serif);font-weight:600}
 /* Esgrima: imagen cuadrada de 8cm x 8cm (pedido 2026-10-26) */
 .esg-photo{width:8cm;max-width:86vw;aspect-ratio:1/1;height:auto}
 .esg-photo img{width:100%;height:100%;object-fit:cover}
+
+/* Cursor: florete en morado y rosa (pedido de Keysi 2026-10-26) */
+body{cursor:url('assets/cursor-espada.png') 80 3, auto}
+a, button, input, select, textarea, label, summary, .card, .lang-switch button{cursor:url('assets/cursor-espada.png') 80 3, pointer}
