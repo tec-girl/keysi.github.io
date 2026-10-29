@@ -49,7 +49,7 @@
       "prog.l6": "Contact &amp; Bookings",
       "nav.news": "News",
       "news.title": "News: Fashion & Fencing",
-      "news.sub": "Recent headlines from fashion and fencing channels, refreshed when the page loads.",
+      "news.sub": "Fashion and fencing live, straight from their sources, without leaving this page.",
       "news.fashion": "Fashion",
       "news.fencing": "Fencing",
       "news.more": "More news ↗", "prog.n6": "Let's take the stage",
@@ -117,7 +117,7 @@
       "prog.l6": "Contact &amp; Bookings",
       "nav.news": "Actus",
       "news.title": "Actus : Mode & Escrime",
-      "news.sub": "Titres récents des chaînes de mode et d'escrime, actualisés à l'ouverture de la page.",
+      "news.sub": "La mode et l'escrime en direct, depuis leurs sources, sans quitter cette page.",
       "news.fashion": "Mode",
       "news.fencing": "Escrime",
       "news.more": "Plus d'actus ↗", "prog.n6": "Entrons en scène",
@@ -185,7 +185,7 @@
       "prog.l6": "Kontakt &amp; Bookings",
       "nav.news": "News",
       "news.title": "News: Mode & Fechten",
-      "news.sub": "Aktuelle Schlagzeilen von Mode- und Fechtkanälen, beim Öffnen der Seite aktualisiert.",
+      "news.sub": "Mode und Fechten live, direkt von ihren Quellen, ohne diese Seite zu verlassen.",
       "news.fashion": "Mode",
       "news.fencing": "Fechten",
       "news.more": "Mehr News ↗", "prog.n6": "Ab auf die Bühne",
@@ -253,7 +253,7 @@
       "prog.l6": "Contato &amp; Bookings",
       "nav.news": "Notícias",
       "news.title": "Notícias: Moda & Esgrima",
-      "news.sub": "Manchetes recentes de canais de moda e esgrima, atualizadas ao abrir a página.",
+      "news.sub": "Moda e esgrima ao vivo, direto de suas fontes, sem sair desta página.",
       "news.fashion": "Moda",
       "news.fencing": "Esgrima",
       "news.more": "Mais notícias ↗", "prog.n6": "Vamos ao palco",
@@ -321,7 +321,7 @@
       "prog.l6": "联系与预约",
       "nav.news": "新闻",
       "news.title": "新闻：时尚与击剑",
-      "news.sub": "时尚与击剑频道的最新头条，打开页面时更新。",
+      "news.sub": "时尚与击剑实时资讯，直接来自源头，无需离开本页。",
       "news.fashion": "时尚",
       "news.fencing": "击剑",
       "news.more": "更多新闻 ↗", "prog.n6": "让我们登台",
@@ -412,143 +412,3 @@
   if (saved && saved !== 'es') applyLang(saved);
 })();
 
-/* ===== NOTICIAS EN VIVO (Google News vía rss2json) ===== */
-(function () {
-  var lang = 'es';
-  try { lang = localStorage.getItem('keysi-lang') || 'es'; } catch (e) {}
-  var LOCALES = { es: 'es-MX', en: 'en-US', fr: 'fr-FR', de: 'de-DE', pt: 'pt-BR', zh: 'zh-CN' };
-  var STR = {
-    es: { loading: 'Cargando noticias…', error: 'No se pudieron cargar las noticias en este momento.' },
-    en: { loading: 'Loading news…', error: 'News could not be loaded right now.' },
-    fr: { loading: 'Chargement des actus…', error: "Impossible de charger les actus pour le moment." },
-    de: { loading: 'News werden geladen…', error: 'Die News konnten gerade nicht geladen werden.' },
-    pt: { loading: 'Carregando notícias…', error: 'Não foi possível carregar as notícias agora.' },
-    zh: { loading: '正在加载新闻…', error: '目前无法加载新闻。' }
-  };
-  var S = STR[lang] || STR.es;
-  document.querySelectorAll('[data-news-loading]').forEach(function (el) { el.textContent = S.loading; });
-
-  var FEEDS = {
-    'news-moda': 'https://news.google.com/rss/search?q=fashion+week+OR+pasarela+OR+moda&hl=es-419&gl=MX&ceid=MX:es-419',
-    'news-esgrima': 'https://news.google.com/rss/search?q=esgrima+OR+fencing&hl=es-419&gl=MX&ceid=MX:es-419'
-  };
-
-  function render(id, items) {
-    var ul = document.getElementById(id);
-    if (!ul) return;
-    ul.innerHTML = '';
-    (items || []).slice(0, 5).forEach(function (it) {
-      var title = it.title || '';
-      var source = it.author || '';
-      var m = title.match(/^(.*) - ([^-]+)$/);
-      if (m) { title = m[1]; if (!source) source = m[2].trim(); }
-      var li = document.createElement('li');
-      var a = document.createElement('a');
-      a.href = it.link;
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.textContent = title;
-      li.appendChild(a);
-      var meta = document.createElement('span');
-      meta.className = 'news-meta';
-      var date = '';
-      try { date = new Date(it.pubDate).toLocaleDateString(LOCALES[lang] || 'es-MX', { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) {}
-      meta.textContent = (source ? source + ' · ' : '') + date;
-      li.appendChild(meta);
-      ul.appendChild(li);
-    });
-    if (!ul.children.length) throw new Error('empty');
-  }
-
-  function fail(id) {
-    var ul = document.getElementById(id);
-    if (ul) ul.innerHTML = '<li class="news-msg">' + S.error + '</li>';
-  }
-
-  function fromXML(text) {
-    var doc = new DOMParser().parseFromString(text, 'text/xml');
-    var nodes = doc.querySelectorAll('item');
-    var out = [];
-    nodes.forEach(function (n) {
-      var src = n.querySelector('source');
-      out.push({
-        title: (n.querySelector('title') || {}).textContent || '',
-        link: (n.querySelector('link') || {}).textContent || '',
-        pubDate: (n.querySelector('pubDate') || {}).textContent || '',
-        author: src ? src.textContent : ''
-      });
-    });
-    return out;
-  }
-
-  function loadFeed(id) {
-    var feed = FEEDS[id];
-    var enc = encodeURIComponent(feed);
-    var attempts = [
-      function () {
-        return fetch('assets/noticias.json', { cache: 'no-store' })
-          .then(function (r) { return r.json(); })
-          .then(function (d) {
-            var key = id === 'news-moda' ? 'moda' : 'esgrima';
-            var items = ((d && d[key]) || []).map(function (it) {
-              return { title: it.title || '', link: it.link || '', pubDate: it.pubDate || '', author: it.source || '' };
-            });
-            if (items.length) return items;
-            throw new Error('local');
-          });
-      },
-      function () {
-        return fetch('https://feed2json.org/convert?url=' + enc)
-          .then(function (r) { return r.json(); })
-          .then(function (d) {
-            var items = ((d && d.items) || []).map(function (it) {
-              return { title: it.title || '', link: it.url || '', pubDate: it.date_published || '', author: '' };
-            });
-            if (items.length) return items;
-            throw new Error('feed2json');
-          });
-      },
-      function () {
-        return fetch('https://cors.eu.org/' + feed)
-          .then(function (r) { return r.text(); })
-          .then(function (t) {
-            var items = fromXML(t);
-            if (items.length) return items;
-            throw new Error('cors-eu');
-          });
-      },
-      function () {
-        return fetch('https://api.rss2json.com/v1/api.json?rss_url=' + enc)
-          .then(function (r) { return r.json(); })
-          .then(function (d) {
-            if (d && d.status === 'ok' && d.items && d.items.length) return d.items;
-            throw new Error('rss2json');
-          });
-      },
-      function () {
-        return fetch('https://api.allorigins.win/get?url=' + enc)
-          .then(function (r) { return r.json(); })
-          .then(function (d) {
-            var items = d && d.contents ? fromXML(d.contents) : [];
-            if (items.length) return items;
-            throw new Error('allorigins');
-          });
-      },
-      function () {
-        return fetch('https://api.codetabs.com/v1/proxy?quest=' + enc)
-          .then(function (r) { return r.text(); })
-          .then(function (t) {
-            var items = fromXML(t);
-            if (items.length) return items;
-            throw new Error('codetabs');
-          });
-      }
-    ];
-    (function next(i) {
-      if (i >= attempts.length) { fail(id); return; }
-      attempts[i]().then(function (items) { render(id, items); }).catch(function () { next(i + 1); });
-    })(0);
-  }
-
-  Object.keys(FEEDS).forEach(loadFeed);
-})();
